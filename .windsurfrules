@@ -1,0 +1,26 @@
+# .windsurfrules
+
+## Cross-Platform Considerations
+- Use PowerShell for terminal commands on Windows.
+- Use Bash for terminal commands on macOS.
+
+## General Instructions
+- Always check for the existence of a `.aidocs` folder in the repository.
+- If `.aidocs` does not exist, create it with the following structure:
+  - `workflow_guides.md`: Contains overall documentation on workflows and coding practices.
+  - `project_plan.md`: Contains the high-level project plan and roadmap.
+  - `temporal_goals/`: Subfolder for short-term goals and tasks (e.g., `goal_YYYY-MM-DD.md`).
+  - `progress_logs/`: Subfolder for tracking progress and AI-generated outputs.
+
+## Rules for Using `.aidocs`
+- Read `workflow_guides.md` and `project_plan.md` before starting any task.
+- Use the `temporal_goals/` folder to document current sub-goals and tasks.
+- Use the `progress_logs/` folder to log progress and AI-generated outputs.
+- Ensure all `.aidocs` files are updated and committed to the repository regularly.
+
+## Overall rules
+- For complex upgrades, fetch documentation on migration and upgrade guides for each package. Plan changes and communicate with the team before starting.
+- When solving build or run issues, make minimal changes required to fix the problem.
+- Group changes into logical commits with descriptive messages.
+- Always check `git status` before pushing.
+- For tutorials, plan changes incrementally and verify solutions step-by-step.
