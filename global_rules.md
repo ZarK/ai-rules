@@ -6,7 +6,7 @@
 
 ## Cross-Platform Considerations
 - Use PowerShell for terminal commands on Windows.
-- Use Bash for terminal commands on macOS.
+- Use Bash for terminal commands on macOS/Linux.
 
 ## Bootstrap Process
 - Verifies and, if necessary, updates the `.windsurfrules` file by checking [https://github.com/ZarK/ai-rules](https://github.com/ZarK/ai-rules).

@@ -16,7 +16,7 @@
 
 ### Post-Analysis
 - Analyze the current solution and generate `solution_description.md` in the `.aidocs` folder.
-- Post-analysis, check [https://github.com/PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) for further project-specific rules.
+- Post-analysis, check [https://github.com/PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) and [https://github.com/balqaasem/awesome-windsurfrules/tree/main/rules/windsurfrules](https://github.com/balqaasem/awesome-windsurfrules/tree/main/rules/windsurfrules) for further project-specific rules.
 
 ### Self-Update and Verification
 - This bootstrap process also features a self-update mechanism:
@@ -48,7 +48,6 @@
 ```
 
 - Add the documents as empty without content to initialize them
-- Then analyze the solution and add an initial description to `solution_description.md`
 - Maintain maximum 3 active goals at any time
 - When completing a goal:
   - Move goal document to `archive/YYYY-MM/goals/`
@@ -76,33 +75,15 @@
 - Write descriptive commit messages for each commit.
 - Keep documentation in sync with code changes.
 
-## Environment Requirements
-- Use Python 3.11 and a `.venv` virtual environment.
-- Activate the virtual environment before running any commands:
-  - **Windows**: `.venv\Scripts\Activate.ps1`
-  - **macOS/Linux**: `.venv/bin/activate`
-- Add `.venv/` to `.gitignore`.
-- Use `requirements.txt` with hashed dependencies (`--require-hashes`).
-
-## Cross-Platform Compatibility
-- Use PowerShell for terminal commands on Windows.
-- Use Bash for terminal commands on macOS/Linux.
-- Ensure AI-generated commands use the correct path separators:
-  - **Windows**: `\`
-  - **macOS/Linux**: `/`
-
-## Quality Assurance
-- All tools must include a `__main__` test section.
-- Implement error handling before feature implementation.
-- Ensure standalone tests pass before integrating features into the main workflow.
-
-## Pre-Commit Checks
-- Verify tutorial numbering matches the `solution/` directory.
-- Ensure code samples match the reference implementation.
-- Validate documentation links and ensure they are up-to-date.
-
-## Integration with Cursor
-- Create an identical `.cursorrules` file alongside `.windsurfrules` for compatibility with Cursor.
+## Virtual Environments
+- Use environment management to isolate project dependencies:
+  - Node: `nvm` (Node Version Manager) or `volta` for Node.js versions and packages
+  - Python: `venv`, `conda` (full environment manager with its own package manager), or `pyenv`
+  - System packages: 
+    - `docker` (container isolation)
+    - `asdf` (universal version manager, alternative to brew)
+    - Personal homebrew (`~/homebrew`) for user-specific installations
+- Always add environment-specific directories to `.gitignore`
 
 ## Communication Guidelines
 DO NOT GIVE ME HIGH LEVEL SHIT, IF I ASK FOR FIX OR EXPLANATION, I WANT ACTUAL CODE OR EXPLANATION!!! I DON'T WANT "Here's how you can blablabla"
@@ -126,8 +107,3 @@ DO NOT GIVE ME HIGH LEVEL SHIT, IF I ASK FOR FIX OR EXPLANATION, I WANT ACTUAL C
 - Split into multiple responses if one response isn't enough to answer the question.
 
 If I ask for adjustments to code I have provided you, do not repeat all of my code unnecessarily. Instead try to keep the answer brief by giving just a couple lines before/after any changes you make. Multiple code blocks are ok.
-
-You are a senior TypeScript programmer with experience in the NextJS framework and a preference for clean programming and design patterns.
-
-Generate code, corrections, and refactorings that comply with the basic principles and nomenclature.
-

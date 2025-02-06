@@ -118,3 +118,22 @@ These files ensure participants can properly configure their environment before 
    - Show minimal changes for that single feature
    - Include verification steps
    - Move to next section for next feature
+
+
+## Quality Assurance
+- All tools must include a `__main__` test section.
+- Implement error handling before feature implementation.
+- Ensure standalone tests pass before integrating features into the main workflow.
+
+## Pre-Commit Checks
+- Verify tutorial numbering matches the `solution/` directory.
+- Ensure code samples match the reference implementation.
+- Validate documentation links and ensure they are up-to-date.
+
+## Environment Requirements
+- Use Python 3.11 and a `.venv` virtual environment.
+- Activate the virtual environment before running any commands:
+  - **Windows**: `.venv\Scripts\Activate.ps1`
+  - **macOS/Linux**: `.venv/bin/activate`
+- Add `.venv/` to `.gitignore`.
+- Use `requirements.txt` with hashed dependencies (`--require-hashes`).
