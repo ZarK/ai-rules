@@ -17,5 +17,4 @@
 
 ## Bootstrap Process
 - Download if missing or update `.windsurfrules` from source
-- Create a corresponding `.cursorrules` file for Cursor compatibility
 - Execute the general bootstrap process defined in `.windsurfrules` with any context keywords

@@ -137,3 +137,17 @@ These files ensure participants can properly configure their environment before 
   - **macOS/Linux**: `.venv/bin/activate`
 - Add `.venv/` to `.gitignore`.
 - Use `requirements.txt` with hashed dependencies (`--require-hashes`).
+
+## Workflow Structure
+- Clear prerequisites and starting point for tasks.
+- Provide conceptual explanations before making code  changes.
+- Follow a step-by-step implementation guide.
+- Include testing and verification steps for all changes.
+
+## Progressive Enhancement Pattern
+- Start with minimal core functionality.
+- Test core functionality end-to-end before proceeding.
+- Integrate with the main application flow.
+- Add monitoring and user feedback mechanisms.
+- Only then add configuration/management UI.
+- Finally, implement additional features.
