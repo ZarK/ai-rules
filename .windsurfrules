@@ -1,4 +1,8 @@
 # .windsurfrules
+1. Perfrom Bootstrap
+2. Create .aidocs folder
+3. Analyze solution and document
+4. Add to memory
 
 ## Bootstrap
 
@@ -6,24 +10,16 @@
 - On invocation of `bootstrap`, the following actions are performed:
   - Verify the existence of the `.windsurfrules` file.
   - If missing or outdated, fetch and update the file from [https://github.com/ZarK/ai-rules](https://github.com/ZarK/ai-rules).
-  - Create an identical `.cursorrules` file for compatibility with Cursor.
 
 ### Context-Specific Bootstrapping
 
 - If the `bootstrap` command is provided with a keyword (e.g., `bootstrap tutorial`), the system additionally:
-  - Searches the repository for a context folder containing a file like `tutorial.md` for proper instructions.
+  - Searches the repository for a context folder containing a file like `context/tutorial.md` for proper instructions.
   - Initializes and imports specific workflows into `knowledge/workflows` under the `.aidocs` directory.
 
 ### Post-Analysis
 - Analyze the current solution and generate `solution_description.md` in the `.aidocs` folder.
-- Post-analysis, check [https://github.com/PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) and [https://github.com/balqaasem/awesome-windsurfrules/tree/main/rules/windsurfrules](https://github.com/balqaasem/awesome-windsurfrules/tree/main/rules/windsurfrules) for further project-specific rules.
-
-### Self-Update and Verification
-- This bootstrap process also features a self-update mechanism:
-  - It checks the current version of the bootstrap configuration.
-  - If an update is detected, it automatically fetches the latest version from the official source.
-  - A status log is recorded to indicate the update process.
-
+- Post-analysis, check https://github.com/PatrickJS/awesome-cursorrules and https://github.com/balqaasem/awesome-windsurfrules/tree/main/rules/windsurfrules for further project-specific rules.
 
 ### Documentation Instructions
 - Always check for the existence of a `.aidocs` folder in the repository.
@@ -57,19 +53,19 @@
 
 ## General Instructions
 
-## Preferred tech stack
+### Preferred tech stack
 - bun, uv, uvw, vite
 - nextjs, typescript, sanity
 - tailwindcss v4, framermotion, heroicons
 - python, asyncio, sqlite
 
-## Git Workflow
+### Git Workflow
 - Always check `git status` before pushing changes.
 - Group changes into logical commits.
 - Write descriptive commit messages for each commit.
 - Keep documentation in sync with code changes.
 
-## Virtual Environments
+### Virtual Environments
 - Use environment management to isolate project dependencies:
   - Node: `nvm` (Node Version Manager) or `volta` for Node.js versions and packages
   - Python: `venv`, `conda` (full environment manager with its own package manager), or `pyenv`
@@ -79,7 +75,7 @@
     - Personal homebrew (`~/homebrew`) for user-specific installations
 - Always add environment-specific directories to `.gitignore`
 
-## Communication Guidelines
+### Communication Guidelines
 - Be casual unless otherwise specified
 - Be terse
 - Suggest solutions that I didn't think about—anticipate my needs
@@ -100,7 +96,7 @@
 
 If I ask for adjustments to code I have provided you, do not repeat all of my code unnecessarily. Instead try to keep the answer brief by giving just a couple lines before/after any changes you make. Multiple code blocks are ok.
 
-## Best Practices
+### Best Practices
 - Always explicitly state the files of interest to change or query, clearly stating state code relationships runs to other components.
 - Frequently run tests. Claude Code excels at validating new functionality through test-driven development.
 - Periodically review the entire project, assessing logic consistency and identifying any redundant or inefficient code.
