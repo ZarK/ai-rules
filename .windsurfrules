@@ -52,12 +52,21 @@
   - Update project_plan.md to reflect completion
 
 ## General Instructions
+1. Start by reading the .aidocs folder and scan for markdown files
+2. Read the solution_description.md and project_plan.md and commit to memory
+3. Read documentation in active_goals and knowledge folders and keep in mind
+4. Document a plan before you start coding
 
 ### Preferred tech stack
 - bun, uv, uvw, vite
 - nextjs, typescript, sanity
 - tailwindcss v4, framermotion, heroicons
 - python, asyncio, sqlite
+
+## Refactoring
+- Split the refactoring into subtasks.
+- Refactor by moving one piece of logic at a time to a new file, and updating the original file to use that new file. 
+- Never refactor more then one piece of logic at a time and complete it before moving on to the next refactoring subtask.
 
 ### Git Workflow
 - Always check `git status` before pushing changes.
@@ -100,3 +109,4 @@ If I ask for adjustments to code I have provided you, do not repeat all of my co
 - Always explicitly state the files of interest to change or query, clearly stating state code relationships runs to other components.
 - Frequently run tests. Claude Code excels at validating new functionality through test-driven development.
 - Periodically review the entire project, assessing logic consistency and identifying any redundant or inefficient code.
+- Don't create empty __init__.py files
